@@ -1,0 +1,35 @@
+
+正式号
+appID是wx06ddd3f598825285
+57176aceb75ff683971b52439419dfea
+
+测试号
+wx099cad8c07eee59d
+2a46177ba1a66d6d11a4fb9d1bfccdc0
+
+相关文章
+    微信JSSDK分享功能详解 http://blog.csdn.net/bk_guo/article/details/53995331
+
+微信：
+    开发者后台 https://mp.weixin.qq.com/debug/cgi-bin/sandboxinfo?action=showinfo&t=sandbox/index
+    微信web开发者工具 https://mp.weixin.qq.com/wiki?t=resource/res_main&id=mp1455784140
+
+
+
+============================================================================
+功能：获取微信信息
+是否需要登录：Y
+============================================================================
+
+参数：
+	{
+	 a: wx_config
+	}
+
+返回：
+	{
+	 appId: String, // 微信配置信息，具体看官网文档
+	 timestame:String, // 微信配置信息，具体看官网文档
+	 nonceStr:String // 微信配置信息，具体看官网文档
+	 signature:String // 微信配置信息，具体看官网文档
+	}
