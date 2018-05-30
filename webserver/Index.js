@@ -1,17 +1,24 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 const path = require('path')
+const promise = require("bluebird")
+let request = require("request")
+request = promise.promisifyAll(request)
+
 
 /**
  * web服务器
  * http://127.0.0.1:8080/index.html
+ * @see https://www.cnblogs.com/youlechang123/p/6795485.html
  * @author ChenMing
  */
 class WebServer {
     /**
      * 构造
      */
-    constructor() {
+    constructor(host = '127.0.0.1', port = 1111) {
+        this._host = host
+        this._port = port
         this._app = express()
         this._app.use(bodyParser.urlencoded({extended: false}))
         this._app.use(express.static(path.join(__dirname, '/webapps/')))
@@ -27,11 +34,11 @@ class WebServer {
     }
 
     getHost() {
-        return '127.0.0.1'
+        return this._host
     }
 
     getPort() {
-        return 1111
+        return this._port
     }
 
     _register() {
@@ -56,7 +63,6 @@ class WebServer {
             console.log("get1 请求url：", req.path)
             console.log("请求参数：", req.query)
             setTimeout(() => res.send("这是get请求"), 1000)
-
         })
     }
 
@@ -65,6 +71,21 @@ class WebServer {
             console.log("请求参数：", req.body)
             let result = {code: 200, msg: "post请求成功"}
             res.send(result)
+        })
+    }
+
+    _loadAgent(apiUrl, agentUrl = '/agent/') {
+        let options = {
+            url: agentUrl,
+            method: 'POST',
+            json: true,
+            headers: {"content-type": "application/json",},
+            body: JSON.stringify({url: apiUrl})
+        }
+        let res = request.postAsync(options)
+        //返回代执行的promise函数
+        return res.spread(function (res, body) {
+            return body
         })
     }
 }
