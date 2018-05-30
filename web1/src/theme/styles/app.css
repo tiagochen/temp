@@ -1,0 +1,26 @@
+/*@import 'reset.css';*/
+/*!*全局样式*!*/
+
+/*html,body{*/
+  /*font-size: 14px;*/
+  /*background: resolve('example.jpg');*/
+/*}*/
+
+.edui-modal div.ant-modal-content {
+  height: 420px;
+}
+input.ant-input-search.person-choose__search {
+  width: 100%;
+}
+.edui-modal.import-person .ant-modal-content .ant-modal-body {
+  padding: 0 50px;
+}
+
+.person-choose .person-items .ant-tag-text {
+  float: left;
+  display: inline-block;
+  max-width: 640px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}

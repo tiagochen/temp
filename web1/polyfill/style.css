@@ -1,0 +1,24 @@
+.menu-layout-wrapper {
+  background: #e2e2e2;
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+.menu-layout-left {
+  background: #ffffff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 200px;
+}
+.menu-layout-content {
+  background: #ffffff;
+  margin-left: 201px;
+  height: 100%;
+}
+.menu-layout-body {
+  background: #fff;
+  padding: 20px 20px 0;
+  overflow: auto;
+}

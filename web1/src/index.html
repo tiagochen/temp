@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>FSPOOL</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="description" content="<%= htmlWebpackPlugin.options.description%>">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <script src="//cs.101.com/v0.1/static/team7_cs/dynamic_loading.js?serviceName=team7_cs?v=<%= new Date().getTime() %>" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    window.codeCdnUrl = '';
+    (function() {
+      var url = ''
+      var appEnv = window.getEnv()
+      if(appEnv !== 'localhost' && appEnv !== 'debug' && appEnv !== 'dev') {
+        url = window.getCdnHost() + '/v0.1/static/userselect_gateway/' + appEnv
+        window.codeCdnUrl = url + '/user-select/'
+      }
+      var cssLoadList = [];
+      var jsLoadList = [];
+      <% for (var css in htmlWebpackPlugin.files.css) { %>
+        cssLoadList.push({type: 'css', href: url + "<%=htmlWebpackPlugin.files.css[css] %>"});
+      <% } %>
+      <% for (var chunk in htmlWebpackPlugin.files.chunks) {
+        %>jsLoadList.push({type: 'js', href: url + "<%=htmlWebpackPlugin.files.chunks[chunk].entry %>"});
+      <% } %>
+      // 业务方css，由于需要覆盖fish样式，要放在最后
+      cssLoadList.push({type: 'css', href: window.codeCdnUrl + 'polyfill/style.css?ver=6'})
+      window.queueLoad(jsLoadList)
+      window.queueLoad(cssLoadList)
+    })()
+  </script>
+</head>
+
+<body>
+<div id="app" style="height: 100%"></div>
+</body>
+</html>

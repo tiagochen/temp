@@ -1,0 +1,50 @@
+<!doctype html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><title>FSPOOL</title><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><meta name="description" content="支持IE8的react脚手架"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"><script src="//cs.101.com/v0.1/static/team7_cs/jsconfigtools.js?serviceName=team7_cs?v=1527592202547"></script><script src="//cs.101.com/v0.1/static/team7_cs/dynamic_loading.js?serviceName=team7_cs?v=1527592202547" type="text/javascript"></script><script src="//cs.101.com/v0.1/static/team7_cs/cdnLibs.js?serviceName=team7_cs?v=1527592202547" type="text/javascript" id="cdnLibs" exclude="jquery-ui"></script><!--[if lte IE 9]>
+  <script src="//cdncs.101.com/v0.1/static/team7_cs/react-polyfill.js?serviceName=team7_cs"></script>
+  <script src="//cdncs.101.com/v0.1/static/fish/script/media-polyfill.min.js"></script>
+  <script src="//cdncs.101.com/v0.1/static/fish/script/swfupload/swfobject.min.js"></script>
+  <script src="//cdncs.101.com/v0.1/static/fish/script/swfupload/swfupload.min.js"></script>
+  <![endif]--><style>.menu-layout-wrapper {
+      background: #e2e2e2;
+      position: relative;
+      height: 100%;
+      width: 100%;
+    }
+    .menu-layout-left {
+      background: #ffffff;
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 200px;
+    }
+    .menu-layout-content {
+      background: #ffffff;
+      margin-left: 201px;
+      height: 100%;
+    }
+    .menu-layout-body {
+      background: #fff;
+      padding: 20px 20px 0;
+      overflow: auto;
+    }</style><script type="text/javascript">window.codeCdnUrl = '';
+    (function() {
+      var url = ''
+      var appEnv = window.getEnv()
+      if(appEnv !== 'localhost' && appEnv !== 'debug' && appEnv !== 'dev') {
+        url = window.getCdnHost() + '/v0.1/static/userselect_gateway/' + appEnv
+        window.codeCdnUrl = url + '/user-select/'
+      }
+      var cssLoadList = [];
+      var jsLoadList = [];
+      
+        cssLoadList.push({type: 'css', href: url + "/fp_dist/assets/index-55c23d0852e2cf9297f7.css"});
+      
+      jsLoadList.push({type: 'js', href: url + "/fp_dist/assets/commons-71ce94313cdded9ccd5e.js"});
+      jsLoadList.push({type: 'js', href: url + "/fp_dist/assets/vendor-bc2f12f273eae1c6b94f.js"});
+      jsLoadList.push({type: 'js', href: url + "/fp_dist/assets/index-55c23d0852e2cf9297f7.js"});
+      
+      // 业务方css，由于需要覆盖fish样式，要放在最后
+      cssLoadList.push({type: 'css', href: window.codeCdnUrl + 'polyfill/style.css?ver=6'})
+      window.queueLoad(jsLoadList)
+      window.queueLoad(cssLoadList)
+    })()</script></head><body><div id="app" style="height: 100%"></div></body></html>
