@@ -1,6 +1,7 @@
 const config = {
     logPath : './',
-    verPath : './'
+    verPath : './',
+    updateTempPath : 'E:\\del\\updateTempPath\\'
 }
 
 module.exports = config

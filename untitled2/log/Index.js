@@ -1,9 +1,10 @@
-let config = require('../config')
-let fs = require('fs')
+const config = require('../config')
+const fs = require('fs')
+
 /**
  * 记录日志的类
- * @type {module.Index}
  * @author ChenMing
+ * @type {module.Index}
  */
 module.exports = class Index {
     /**
@@ -16,6 +17,14 @@ module.exports = class Index {
             Index._formatLog('succ', ...a),
             (err) => {  err && console.log('日志记录失败', err) });
         console.log(...a)
+    }
+
+    static error(...a) {
+        fs.appendFile(
+            Index._getFileName(),
+            Index._formatLog('error', ...a),
+            (err) => {  err && console.log('日志记录失败', err) });
+        console.error(...a)
     }
 
     static _getFileName() {

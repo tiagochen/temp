@@ -2,9 +2,14 @@ class TestData {
 }
 
 TestData.verList = {
-    'path1': '123',
-    'path3': '456',
-    'path2': '456'
+    'js/1/encoder.js': {
+        hash: '123',
+        url: 'https://common.cnblogs.com/script/encoder.js'
+    },
+    'icon_weibo_24.png': {
+        hash: '1223',
+        url: 'https://common.cnblogs.com/images/icon_weibo_24.png'
+    }
 }
 
 module.exports = TestData
