@@ -408,3 +408,122 @@
 [succ] 5-31 8:38:45 : 加载远程文件: https://common.cnblogs.com/script/encoder.js
 [succ] 5-31 8:38:45 : 加载远程文件: https://common.cnblogs.com/images/icon_weibo_24.png
 [succ] 5-31 8:38:45 : 更新文件下载完成
+[succ] 5-31 20:34:54 : 程序启动
+[succ] 5-31 20:34:54 : 开始自动更新: ,2
+[succ] 5-31 20:34:54 : 加载远程文件: https://common.cnblogs.com/script/encoder.js
+[succ] 5-31 20:34:54 : 加载远程文件: https://common.cnblogs.com/images/icon_weibo_24.png
+[succ] 5-31 20:34:54 : 更新文件下载完成
+[succ] 5-31 20:36:13 : 程序启动
+[succ] 5-31 20:36:41 : 程序启动
+[succ] 5-31 20:37:3 : 程序启动
+[succ] 5-31 20:37:3 : 开始自动更新: ,2
+[error] 5-31 20:37:3 : 目录创建失败,Error: EPERM: operation not permitted, mkdir 'E:\del\updateTempPath\js\1'
+[error] 5-31 20:37:3 : 自动更新失败
+[succ] 5-31 20:37:15 : 程序启动
+[succ] 5-31 20:37:15 : 开始自动更新: ,2
+[succ] 5-31 20:37:15 : 加载远程文件: https://common.cnblogs.com/script/encoder.js
+[succ] 5-31 20:37:15 : 加载远程文件: https://common.cnblogs.com/images/icon_weibo_24.png
+[succ] 5-31 20:37:15 : 更新文件下载完成
+[succ] 5-31 20:56:39 : 程序启动
+[succ] 5-31 20:56:59 : 程序启动
+[succ] 5-31 21:8:18 : 程序启动
+[succ] 5-31 21:8:55 : 程序启动
+[succ] 5-31 21:14:26 : 程序启动
+[succ] 5-31 21:16:1 : 程序启动
+[succ] 5-31 21:21:7 : 程序启动
+[succ] 5-31 21:21:33 : 程序启动
+[succ] 5-31 21:21:51 : 程序启动
+[succ] 5-31 21:23:5 : 程序启动
+[succ] 5-31 21:27:6 : 程序启动
+[succ] 5-31 21:27:19 : 程序启动
+[succ] 5-31 21:29:42 : 程序启动
+[succ] 5-31 21:30:58 : 程序启动
+[succ] 5-31 21:31:17 : 程序启动
+[succ] 5-31 21:32:52 : 程序启动
+[succ] 5-31 21:33:11 : 程序启动
+[succ] 5-31 21:33:30 : 程序启动
+[succ] 5-31 21:35:13 : 程序启动
+[succ] 5-31 21:38:25 : 程序启动
+[succ] 5-31 21:38:52 : 程序启动
+[succ] 5-31 21:39:43 : 程序启动
+[succ] 5-31 21:40:20 : 程序启动
+[succ] 5-31 21:40:20 : 程序退出
+[succ] 5-31 21:40:28 : 程序启动
+[succ] 5-31 21:40:28 : 程序退出
+[succ] 5-31 21:41:5 : 程序启动
+[succ] 5-31 21:41:5 : 程序退出
+[succ] 5-31 21:43:11 : 程序启动
+[succ] 5-31 21:43:11 : 程序退出
+[succ] 5-31 21:44:1 : 程序启动
+[succ] 5-31 21:44:1 : 程序退出
+[succ] 5-31 21:44:1 : 加载远程文件: https://common.cnblogs.com/script/encoder.js
+[succ] 5-31 21:44:1 : 开始自动更新: ,2
+[succ] 5-31 21:44:1 : 加载远程文件: https://common.cnblogs.com/images/icon_weibo_24.png
+[succ] 5-31 21:44:1 : 更新文件下载完成
+[error] 5-31 21:44:1 : 自动更新失败
+[succ] 5-31 21:44:14 : 程序启动
+[succ] 5-31 21:44:14 : 程序退出
+[succ] 5-31 21:44:14 : 开始自动更新: ,2
+[succ] 5-31 21:44:14 : 加载远程文件: https://common.cnblogs.com/script/encoder.js
+[succ] 5-31 21:44:14 : 加载远程文件: https://common.cnblogs.com/images/icon_weibo_24.png
+[succ] 5-31 21:44:15 : 更新文件下载完成
+[succ] 5-31 21:44:30 : 程序启动
+[succ] 5-31 21:44:30 : 程序退出
+[succ] 5-31 21:44:30 : 开始自动更新: ,2
+[error] 5-31 21:44:30 : 目录创建失败,Error: ENOENT: no such file or directory, mkdir 'E:\del\updateTempPath\js\1'
+[error] 5-31 21:44:30 : 自动更新失败
+[succ] 5-31 21:47:33 : 程序启动
+[succ] 5-31 21:47:33 : 程序退出
+[succ] 5-31 21:47:33 : 开始自动更新: ,2
+[succ] 5-31 21:47:47 : 程序启动
+[succ] 5-31 21:47:47 : 程序退出
+[succ] 5-31 21:47:47 : 开始自动更新: ,2
+[succ] 5-31 21:48:1 : 程序启动
+[succ] 5-31 21:48:1 : 程序退出
+[succ] 5-31 21:48:56 : 程序启动
+[succ] 5-31 21:48:56 : 程序退出
+[succ] 5-31 21:48:56 : 开始自动更新: ,2
+[error] 5-31 21:48:56 : 自动更新失败
+[succ] 5-31 21:49:30 : 程序启动
+[succ] 5-31 21:49:30 : 程序退出
+[succ] 5-31 21:49:30 : 开始自动更新: ,2
+[succ] 5-31 21:50:0 : 程序启动
+[succ] 5-31 21:50:0 : 程序退出
+[succ] 5-31 21:50:0 : 开始自动更新: ,2
+[succ] 5-31 21:50:0 : 加载远程文件: https://common.cnblogs.com/script/encoder.js
+[succ] 5-31 21:50:0 : 加载远程文件: https://common.cnblogs.com/images/icon_weibo_24.png
+[succ] 5-31 21:50:0 : 更新文件下载完成
+[succ] 5-31 21:50:33 : 程序启动
+[succ] 5-31 21:50:33 : 程序退出
+[succ] 5-31 21:50:33 : 开始自动更新: ,2
+[succ] 5-31 21:50:33 : 加载远程文件: https://common.cnblogs.com/script/encoder.js
+[succ] 5-31 21:50:33 : 加载远程文件: https://common.cnblogs.com/images/icon_weibo_24.png
+[succ] 5-31 21:50:34 : 更新文件下载完成
+[succ] 5-31 21:52:11 : 程序启动
+[succ] 5-31 21:52:11 : 程序退出
+[succ] 5-31 21:52:11 : 开始自动更新: ,2
+[succ] 5-31 21:52:11 : 加载远程文件: https://common.cnblogs.com/script/encoder.js
+[succ] 5-31 21:52:11 : 加载远程文件: https://common.cnblogs.com/images/icon_weibo_24.png
+[succ] 5-31 21:53:5 : 程序启动
+[succ] 5-31 21:53:5 : 程序退出
+[succ] 5-31 21:53:5 : 开始自动更新: ,2
+[succ] 5-31 21:53:5 : 加载远程文件: https://common.cnblogs.com/script/encoder.js
+[succ] 5-31 21:53:5 : 加载远程文件: https://common.cnblogs.com/images/icon_weibo_24.png
+[succ] 5-31 21:53:5 : 更新文件下载完成
+[succ] 5-31 21:56:19 : 程序启动
+[succ] 5-31 21:56:19 : 程序退出
+[succ] 5-31 21:56:19 : 开始自动更新: ,2
+[succ] 5-31 21:56:19 : 加载远程文件: https://common.cnblogs.com/script/encoder.js
+[succ] 5-31 21:56:19 : 加载远程文件: https://common.cnblogs.com/images/icon_weibo_24.png
+[succ] 5-31 21:56:19 : 更新文件下载完成
+[succ] 5-31 21:56:56 : 程序启动
+[succ] 5-31 21:56:56 : 程序退出
+[succ] 5-31 21:56:56 : 开始自动更新: ,2
+[succ] 5-31 21:56:56 : 加载远程文件: https://common.cnblogs.com/script/encoder.js
+[succ] 5-31 21:56:56 : 加载远程文件: https://common.cnblogs.com/images/icon_weibo_24.png
+[succ] 5-31 21:56:56 : 更新文件下载完成
+[succ] 5-31 21:57:12 : 程序启动
+[succ] 5-31 21:57:12 : 程序退出
+[succ] 5-31 21:57:12 : 开始自动更新: ,2
+[succ] 5-31 21:57:12 : 加载远程文件: https://common.cnblogs.com/script/encoder.js
+[succ] 5-31 21:57:13 : 加载远程文件: https://common.cnblogs.com/images/icon_weibo_24.png

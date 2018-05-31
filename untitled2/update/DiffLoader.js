@@ -1,4 +1,4 @@
-const Log = require('../log')
+const Log = require('../core/log')
 const Promise = require("bluebird")
 const request = Promise.promisifyAll(require('request'))
 const fs = Promise.promisifyAll(require('fs'))
@@ -15,23 +15,25 @@ module.exports = class DiffLoader {
     loadFiles(fileList) {
         this._clearTempDir(config.updateTempPath)
         Log.succ('开始自动更新: ', Object.keys(fileList).length)
-        let promise = Promise.resolve();
+        let promise = Promise.resolve()
         for (let path in fileList) {
             let detail = fileList[path]
             promise = promise.then(() => this._loadFile(path, detail.url))
         }
-        promise.then(() => {
+        return promise.then(() => {
             Log.succ('更新文件下载完成')
         }).catch((e) => {
             Log.error('自动更新失败')
         })
     }
 
+    restoreFiles() {
+        FpFs.copyDirs(config.updateTempPath, `${process.cwd()}/kk/`)
+    }
+
     _loadFile(savePath, url) {
         let dir = `${config.updateTempPath}${savePath}`
-        return this._makeDirs(path.dirname(dir))
-            .then(() => this._getHttpFile(url))
-            .then((body) => this._cacheFile(dir, body))
+        return this._makeDirs(path.dirname(dir)).then(() => this._getHttpFile(url)).then((body) => this._cacheFile(dir, body))
     }
 
     /**
@@ -42,8 +44,8 @@ module.exports = class DiffLoader {
      */
     _makeDirs(dir) {
         return new Promise((resolve, reject) => {
-            return FpFs.mkdirs(dir, (err) => {
-                if(err){
+            return FpFs.mkdirsAsync(dir, (err) => {
+                if (err) {
                     Log.error('目录创建失败', err)
                     return reject(err)
                 }
