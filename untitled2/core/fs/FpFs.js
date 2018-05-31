@@ -1,6 +1,7 @@
 const Promise = require("bluebird")
 const fs = Promise.promisifyAll(require('fs'))
 const path = require("path")
+const stat = fs.stat
 
 module.exports = class FpFs {
     /**
@@ -22,12 +23,12 @@ module.exports = class FpFs {
      * 递归删除文件夹
      * @param dirname 目录
      */
-    static rmDirs(dirname) {
+    static rmdirs(dirname) {
         if (fs.existsSync(dirname)) {
             fs.readdirSync(dirname).forEach((file) => {
                 let curPath = dirname + "/" + file;
                 if (fs.statSync(curPath).isDirectory()) { // recurse
-                    FpFs.rmDirs(curPath);
+                    FpFs.rmdirs(curPath);
                 } else { // delete file
                     fs.unlinkSync(curPath);
                 }
@@ -35,4 +36,14 @@ module.exports = class FpFs {
             fs.rmdirSync(dirname);
         }
     }
+
+    /**
+     * 目录拷贝
+     * @param src
+     * @param dst
+     */
+    static copyDirs(src, dst, callback) {
+
+    }
+
 }

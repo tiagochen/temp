@@ -14,7 +14,6 @@ const FpFs = require("../core/fs/FpFs")
 module.exports = class DiffLoader {
     loadFiles(fileList) {
         this._clearTempDir(config.updateTempPath)
-        return
         Log.succ('开始自动更新: ', Object.keys(fileList).length)
         let promise = Promise.resolve();
         for (let path in fileList) {
@@ -77,7 +76,7 @@ module.exports = class DiffLoader {
      * @private
      */
     _clearTempDir(dirname) {
-        // FpFs.rmDirs(dirname)
+        FpFs.rmdirs(dirname)
     }
 
     /**
